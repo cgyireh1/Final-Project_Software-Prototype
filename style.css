@@ -75,9 +75,11 @@ body.dark{
   right: 0;
   z-index: 1000;
   border-bottom: var(--border);
-  background-color: #c9d6ff;
-  background:linear-gradient(to right,#e2e2e2,#c9d6ff);
-  
+  /* background-color: #c9d6ff;
+  background:linear-gradient(to right,#e2e2e2,#c9d6ff); */
+  background: url(images/home-bg.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .header .flex{
@@ -337,7 +339,7 @@ body.dark{
 .home-text h1 {
   font-size: 4rem;
   margin: 15px 0 15px;
-  color: var(--black);
+  color: var(--main-color);
 }
 
 .home-text h4 {
@@ -357,7 +359,7 @@ body.dark{
 /* -----------------about----------------- */
 .about h3 {
   text-align: center;
-  color: var(--black);
+  color: var(--main-color);
   font-size: 4rem;
 }
 
@@ -391,8 +393,8 @@ body.dark{
 }
 
 .about .row .content h3{
-  font-size: 2.6rem;
-  color:var(--black);
+  font-size: 2.8rem;
+  color:rgb(192, 192, 7);
   text-transform: capitalize;
 }
 
@@ -421,7 +423,7 @@ body.dark{
 
 .about .box-container .box h3{
   font-size: 2.5rem;
-  color: var(--black);
+  color: var(--white);
   margin-bottom: .3rem;
 }
 
@@ -604,7 +606,7 @@ body.dark{
 
 .courses .box-container .box .title{
   font-size: 2.6rem;
-  color: var(--black);
+  color: var(--white);
   padding-bottom: 1rem;
 }
 
@@ -615,7 +617,7 @@ body.dark{
 
 .courses h1{
   font-size: 4rem;
-  color:var(--black);
+  color:var(--white);
   text-transform: capitalize;
   text-align: center;
 }
@@ -657,7 +659,7 @@ body.dark{
 
 .mentorship h3{
   font-size: 3.5rem;
-  color:var(--black);
+  color:var(--main-color);
   text-transform: capitalize;
   text-align: center;
   padding: 2rem;
@@ -665,7 +667,7 @@ body.dark{
 
 .mentorship .row .content h4{
   font-size: 2rem;
-  color:var(--black);
+  color:var(--white);
   text-transform: capitalize;
   text-align: justify;
 }
@@ -743,7 +745,7 @@ body.dark{
 
 .last-text p {
   text-align: center;
-  color: #535169;
+  color: var(--white);
   border-top: 1px solid #535169;
   font-size: 14px;
   padding: 30px;
