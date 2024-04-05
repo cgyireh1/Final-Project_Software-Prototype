@@ -103,7 +103,7 @@ body.dark{
   line-height: 4.5rem;
   cursor: pointer;
   text-align: center;
-  margin-left: 1rem;
+  margin-left: .7rem;
 }
 
 .header .flex .icons div:hover{
