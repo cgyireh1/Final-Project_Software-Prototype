@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>discussion-forum</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <header class="header">
+   
+    <section class="flex">
+ 
+      <a href="home.html" class="logo"><img src="images/logo.png" alt=""></a>
+
+      <div class="profile">
+        <img src="images/profile.jpg" class="image" alt="profile">
+        <h3 class="name">user name</h3>
+        <p class="role">role</p>
+        <a href="profile.html" class="btn">view profile</a>
+        <div class="flex-btn">
+          <a href="login.html" class="option-btn">login</a>
+          <a href="signup.html" class="option-btn">sign up</a>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <a href="index.html"><span>Home</span></a>
+        <a href="about.html"><span>About</span></a>
+        <a href="courses.html"><span>Courses</span></a>
+        <a href="index.html#mentorship"><span>Mentorship</span></a>
+        <a href="events.html"><span>Events</span></a>
+        <a href="dforum.html"><span>Forum</span></a>
+      </nav>
+
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <!-- <div id="search-btn" class="fas fa-search"></div> -->
+        <div id="user-btn" class="fas fa-user"></div>
+        <div id="toggle-btn" class="fas fa-toggle-off"></div>
+      </div>
+
+
+    </section>
+ 
+  </header> 
+
+
+  <section class="box-container">
+    <div class="discussion-forum" id ="discussion-forum">
+      <div class="top-bar">
+        <h1>
+          <i class="fas fa-comments"></i>
+           Discussion Forum
+        </h1>
+        <h3>Got doubts?  Have Questions?  Got Ideas?</h3>
+        <h3>Drop All here ...</h3>
+      </div>
+      <div class="main">
+        <ol>
+          <!-- <li class="row">
+            <a href="#">
+              <h4 class="title">
+                Thread 1            
+              </h4>
+              <div class="bottom">
+                <p class="timestand">
+                  14/03/2024
+                </p>
+                <p class="comments-count">
+                  5 comments
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="row">
+            <a href="#">
+              <h4 class="title">
+                Thread 2            
+              </h4>
+              <div class="bottom">
+                <p class="timestand">
+                  14/03/2024
+                </p>
+                <p class="comments-count">
+                  5 comments
+                </p>
+              </div>
+            </a>
+          </li>   -->
+        </ol>
+      </div>
+    </div>
+  </section>  
+
+
+
+  <style>
+
+    :root{
+      --main-color:#6db4f7;
+      --red:#e74c3c;
+      --orange:#f39c12;
+      --light-color:#888;
+      --light-bg:#eee;
+      --black:#2c3e50;
+      --white:#fff;
+      --border:.1rem solid rgba(0,0,0,.2);
+    }
+
+    *{
+      font-family: 'Nunito', sans-serif;
+      margin:0; 
+      padding:0;
+      box-sizing: border-box;
+      outline: none; 
+      border:none;
+      text-decoration: none;
+    }
+
+
+    *::selection{
+      background-color: var(--main-color);
+      color:#fff;
+    }
+
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+
+    html{
+      font-size: 62.5%;
+      overflow-x: hidden;
+    }
+
+
+    body.dark{
+      --light-color:#aaa;
+      --light-bg:#333;
+      --black:#fff;
+      --white:#222;
+      --border:.1rem solid rgba(255,255,255,.2);
+    }
+    
+    /*----------------- header -----------------*/
+
+    .header{
+      position: sticky;
+      top:0; left:0; right: 0;
+      background-color: var(--light-bg);
+      z-index: 1000;
+      border-bottom: var(--border);
+      background-color: #c9d6ff;
+      background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+    }
+
+    .header .flex{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding: 0 1rem;
+    }
+
+    .header .flex .logo img{
+      /* font-size: 1rem;
+      color: var(--black); */
+      height: 65px;
+      width: auto;
+    }
+
+    .header .flex .icons div{
+      font-size: 2rem;
+      color:var(--black);
+      background-color: var(--light-bg);
+      border-radius: 3rem;
+      height: 4.5rem;
+      width: 4.5rem;
+      line-height: 4.5rem;
+      cursor: pointer;
+      text-align: center;
+      margin-left: .7rem;
+    }
+
+    .header .flex .icons div:hover{
+      background-color: var(--black);
+      color:var(--white);
+    }
+
+
+    /* ----------------- header-profile-----------------*/
+
+    .header .flex .profile{
+      position: absolute;
+      top:120%; right: 2rem;
+      background-color: var(--white);
+      border-radius: .5rem;
+      padding: 1.5rem;
+      text-align: center;
+      overflow: hidden;
+      transform-origin: top right;
+      transform: scale(0);
+      transition: .2s linear;
+      width: 23rem;
+    }
+
+    .header .flex .profile.active{
+      transform: scale(1);
+    }
+
+    .header .flex .profile .image{
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      object-fit: contain;
+      margin-bottom: .5rem;
+    }
+
+    .header .flex .profile .name{
+      font-size: 2rem;
+      color:var(--black);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .header .flex .profile .role{
+      font-size: 1.8rem;
+      color: var(--light-color);
+    }
+
+    #search-btn{
+      display: none;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .discussion-forum{
+      width: 60%;
+    }
+
+    a{
+      text-decoration: none;
+      color: rgb(17, 17, 17);
+    }
+
+    h4{
+      margin: 0;
+      font-size: 1.6rem;
+    }
+
+    p{
+      margin: 0;
+      font-size: 1.3rem;
+    }
+
+    .top-bar {
+      background-color: var(--black);
+      padding: 20px 30px;
+      margin: 20px 0;
+      border-radius: 8px;
+      color: white;
+      text-align: center;
+    }
+
+    .top-bar h1, h3{
+      font-size: 3rem;
+    }
+
+    .top-bar h3{
+      font-size: 2rem;
+    }
+
+    .main {
+      background-color: var(--light-color);
+      padding: 20px 30px;
+      border-radius: 8px;
+    }
+
+    .bottom {
+      display: flex;
+      color: var(--black);
+      font-size: 12px;
+    }
+
+    .timestand {
+      padding-right: 10px;
+    }
+
+  </style>
+
+
+  <script src="thread.js"></script>  
+  <script src="script.js"></script> 
+
+  <script>
+    console.log(threads);
+
+    var container = document.querySelector("ol");
+    for (let thread of threads) {
+      var html = `
+      <li class="row">
+          <a href="/thread.html?${thread.id}">
+            <h4 class="title">
+              ${thread.title}          
+            </h4>
+            <div class="bottom">
+              <p class="timestand">
+                ${new Date(thread.date).toLocaleString()}
+              </p>
+              <p class="comments-count">
+                ${thread.comments.length} comments
+              </p>
+            </div>
+          </a>
+        </li>
+      `
+      container.insertAdjacentHTML("beforeend", html);
+    }
+  </script>
+
+
+
+  <script src="science.html"></script>
+</body>
+</html>  

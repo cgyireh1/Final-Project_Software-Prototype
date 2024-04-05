@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="header">
+   
+    <section class="flex">
+ 
+      <a href="home.html" class="logo"><img src="images/logo.png" alt=""></a>
+
+      <div class="profile">
+        <img src="images/profile.jpg" class="image" alt="profile">
+        <h3 class="name">user name</h3>
+        <p class="role">role</p>
+        <a href="profile.html" class="btn">view profile</a>
+        <div class="flex-btn">
+          <a href="http://localhost/login" class="option-btn">login</a>
+          <a href="http://localhost/login" class="option-btn">SignUp</a>
+        </div>
+      </div>
+
+       
+
+      <nav class="navbar">
+        <a href="index.html"><span>Home</span></a>
+        <a href="index.html#about"><span>About</span></a>
+        <a href="index.html#courses"><span>Courses</span></a>
+        <a href="index.html#mentorship"><span>Mentorship</span></a>
+        <a href="events.html"><span>Events</span></a>
+        <a href="dforum.html"><span>Forum</span></a>
+      </nav>
+
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="user-btn" class="fas fa-user"></div>
+        <div id="toggle-btn" class="fas fa-toggle-off"></div>
+      </div>
+    </section>
+ 
+  </header>
+
+  <section class="watch-video">
+
+    <div class="video-container">
+       <div class="video">
+          <video src="https://youtu.be/WqzK3UAXaHs" controls poster="images/science6.png" id="video"></video>
+       </div>
+       <h3 class="title">Science - Environmental Science</h3>
+       <div class="info">
+          <p class="date"><i class="fas fa-calendar"></i><span>22-02-2024</span></p>
+          <p class="date"><i class="fas fa-heart"></i><span>44 likes</span></p>
+       </div>
+       <div class="tutor">
+          <img src="images/profile.jpg" alt="">
+          <div>
+             <h3>Tutor</h3>
+             <span>developer</span>
+          </div>
+       </div>
+       <form action="" method="post" class="flex">
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+          <button><i class="far fa-heart"></i><span>like</span></button>
+       </form>
+       <p class="description">
+        Environmental Science is dedicated to understanding the natural world, the impact of human activities on the environment, and finding sustainable solutions to preserve our planet. It encompasses areas such as ecology, climate science, conservation, and renewable energy, addressing critical environmental challenges we face today.
+       </p>
+    </div>
+ 
+  </section>
+ 
+  <section class="comments">
+ 
+    <h1 class="heading">5 comments</h1>
+ 
+    <form action="" class="add-comment">
+       <h3>add comments</h3>
+       <textarea name="comment_box" placeholder="enter your comment" required maxlength="0200" cols="30" rows="02"></textarea>
+       <input type="submit" value="add comment" class="inline-btn" name="add_comment">
+    </form>
+ 
+    <h1 class="heading">User Comments</h1>
+ 
+    <div class="box-container">
+
+      <div class="box">
+          <div class="user">
+            <img src="images/user3.jpg" alt="">
+            <div>
+                <h3>abena Quaye</h3>
+                <span>22-03-2024</span>
+            </div>
+          </div>
+          <div class="comment-box">this is a comment form shaikh anas</div>
+          <form action="" class="flex-btn">
+            <input type="submit" value="edit comment" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="delete comment" name="delete_comment" class="inline-delete-btn">
+          </form>
+      </div>
+ 
+      <div class="box">
+          <div class="user">
+            <img src="images/user1.jpg" alt="">
+            <div>
+                <h3>Sung</h3>
+                <span>22-02-2024</span>
+            </div>
+          </div>
+          <div class="comment-box">Awesome Tutorial!
+            keep going!</div>
+      </div>
+
+      <div class="box">
+          <div class="user">
+            <img src="images/user3.jpg" alt="">
+            <div>
+                <h3>Nwennyaa</h3>
+                <span>22-02-2024</span>
+            </div>
+          </div>
+          <div class="comment-box">Amazing way of teaching!
+            thank you so much!
+          </div>
+      </div>
+
+      <div class="box">
+          <div class="user">
+            <img src="images/user2.jpg" alt="">
+            <div>
+                <h3>Azaamaale</h3>
+                <span>22-02-2024</span>
+            </div>
+          </div>
+          <div class="comment-box">loved it, thanks for the Tutorial!</div>
+      </div>
+
+      <div class="box">
+          <div class="user">
+            <img src="images/user5.jpg" alt="">
+            <div>
+                <h3>Caroline</h3>
+                <span>22-02-2024</span>
+            </div>
+          </div>
+          <div class="comment-box">this is what I have been looking for! thank you so much!</div>
+      </div>
+
+
+ 
+    </div>
+ 
+  </section>
+
+
+
+  <style>
+
+    :root{
+      --main-color:#6db4f7;
+      --red:#e74c3c;
+      --orange:#f39c12;
+      --light-color:#888;
+      --light-bg:#eee;
+      --black:#2c3e50;
+      --white:#fff;
+      --border:.1rem solid rgba(0,0,0,.2);
+    }
+
+    .watch-video .video-container{
+      background-color: var(--white);
+      border-radius: .5rem;
+      padding: 4rem 30rem;
+    }
+
+    .watch-video .video-container .video{
+      position: relative;
+      margin-bottom: 1.5rem;
+      border: 1px solid white;
+    }
+
+    .watch-video .video-container .video video{
+      border-radius: .5rem;
+      width: 100%;
+      object-fit: contain;
+      background-color: #1c1e1f;
+    }
+
+    .watch-video .video-container .title{
+      font-size: 2rem;
+      color: var(--black);
+    }
+
+    .watch-video .video-container .info{
+      display: flex;
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+      border-bottom: var(--border);
+      padding-bottom: 1.5rem;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .watch-video .video-container .info p{
+      font-size: 1.6rem;
+    }
+
+    .watch-video .video-container .info p span{
+      color: var(--light-color);
+    }
+
+    .watch-video .video-container .info i{
+      margin-right: 1rem;
+      color: var(--main-color);
+    }
+
+    .watch-video .video-container .tutor{
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .watch-video .video-container .tutor img{
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+      object-fit: cover;
+    }
+
+    .watch-video .video-container .tutor h3{
+      font-size: 2rem;
+      color: var(--black);
+      margin-bottom: .2rem;
+    }
+
+    .comments h1{
+      text-align: center;
+      font-size: 2rem;
+      color: var(--black);
+    }
+
+    .watch-video .video-container .tutor span{
+      font-size: 1.5rem;
+      color: var(--light-color);
+    }
+
+    .watch-video .video-container .flex{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .watch-video .video-container .flex button{
+      border-radius: .5rem;
+      padding: 1rem 1.5rem;
+      font-size: 1.8rem;
+      cursor: pointer;
+      background-color: var(--light-bg);
+    }
+
+    .watch-video .video-container .flex button i{
+      margin-right: 1rem;
+      color: var(--black);
+    }
+
+    .watch-video .video-container .flex button span{
+      color: var(--light-color);
+    }
+
+    .watch-video .video-container .flex button:hover{
+      background-color: var(--black);
+    }
+
+    .watch-video .video-container .flex button:hover i{
+      color: var(--white);
+    }
+
+    .watch-video .video-container .flex button:hover span{
+      color: var(--white);
+    }
+
+    .watch-video .video-container .description{
+      line-height: 1.5;
+      font-size: 1.7rem;
+      color: var(--light-color);
+      margin-top: 2rem;
+    }
+
+    .comments{
+      padding: 4rem 30rem;
+    }
+
+    .comments .add-comment{
+      background-color: var(--white);
+      border-radius: .5rem;
+      padding: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .comments .add-comment h3{
+      font-size: 2rem;
+      color: var(--black);
+      margin-bottom: 1rem;
+    }
+
+    .comments .add-comment textarea{
+      height: 20rem;
+      resize: none;
+      background-color: var(--light-bg);
+      border-radius: .5rem;
+      border: var(--border);
+      padding: 1.4rem;
+      font-size: 1.8rem;
+      color: var(--black);
+      width: 100%;
+      margin: .5rem 0;
+    }
+
+    .comments .box-container{
+      display: grid;
+      gap: 2.5rem;
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: .5rem;
+    }
+
+    .comments .box-container .box .user{
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .comments .box-container .box .user img{
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+    }
+
+    .comments .box-container .box .user h3{
+      font-size: 2rem;
+      color: var(--black);
+      margin-bottom: .2rem;
+    }
+
+    .comments .box-container .box .user span{
+      font-size: 1.5rem;
+      color: var(--light-color);
+    }
+
+    .comments .box-container .box .comment-box{
+      border-radius: .5rem;
+      background-color: var(--light-bg);
+      padding:1rem 1.5rem;
+      white-space: pre-line;
+      margin: .5rem 0;
+      font-size: 1.8rem;
+      color: var(--black);
+      line-height: 1.5;
+      position: relative;
+      z-index: 0;
+    }
+
+    .comments .box-container .box .comment-box::before{
+      content: '';
+      position: absolute;
+      top: -1rem; left: 1.5rem;
+      background-color: var(--light-bg);
+      height: 1.2rem;
+      width: 2rem;
+      clip-path: polygon(50% 0%, 0% 020%, 020% 020%);
+    }
+  </style>
+
+
+
+  <script src="script.js"></script> 
+
+</body>
+</html>  

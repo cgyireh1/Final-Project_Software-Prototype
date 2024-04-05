@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="style.css">
+  <title>website</title>
+</head>
+<body>
+  
+  <header class="header">
+   
+    <section class="flex">
+ 
+      <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+
+      <div class="profile">
+        <img src="images/profile.jpg" class="image" alt="">
+        <h3 class="name">user name</h3>
+        <p class="role">role</p>
+        <a href="profile.html" class="btn">view profile</a>
+        <div class="flex-btn">
+            <a href="http://localhost/login" class="option-btn">login</a>
+            <a href="http://localhost/login" class="option-btn">SignUp</a>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <a href="index.html"><span>Home</span></a>
+        <a href="#about"><span>About</span></a>
+        <a href="#courses"><span>Courses</span></a>
+        <a href="#mentorship"><span>Mentorship</span></a>
+        <!-- <a href="contact.html"><span>Contact us</span></a> -->
+        <a href="events.html"><span>Events</span></a>
+        <a href="dforum.html"><span>Forum</span></a>
+      </nav>
+
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars" onclick="toggleSidebar()"></div>
+        <div id="user-btn" class="fas fa-user"></div>
+        <div id="toggle-btn" class="fas fa-toggle-off"></div>
+      </div>
+
+
+    </section>
+ 
+  </header> 
+
+
+  <div class="side-bar">
+
+    <!-- <div id="close-btn">
+       <i class="fas fa-times"></i>
+    </div> -->
+ 
+    <div class="profile">
+       <img src="images/logo.png" class="image" alt="profile-image">
+    </div>
+ 
+    <nav class="navbar">
+       <a href="index.html"><i class="fas fa-home"></i><span>home</span></a>
+       <a href="about.html"><i class="fas fa-address-card"></i><span>about</span></a>
+       <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>course</span></a>
+       <a href="#mentorship"><i class="fas fa-people-line"></i><span>mentor</span></a>
+       <a href="dforum.html"><i class="fas fa-comments"></i><span>forum</span></a>
+    </nav>
+ 
+  </div>
+
+
+
+  <section class="home-grid" id="home">
+ 
+    <div class="box-container">
+      <div class="home-text">
+        <h1 class="heading"> STEMReach for North Ghana Girls</h1>
+        <h4>Empowering North Ghana's Girls in STEM, Igniting Brilliance, and Transforming Communities.</h4>
+      </div>
+  
+      <div class="home-img">
+        <img src="images/stem (1).png">
+      </div> 
+ 
+    </div>
+  </section>
+
+
+  <section class="about" id="about">
+    <h3>About Us</h3>
+
+    <div class="row">
+
+      <div class="image">
+          <img src="images/about-img.png" alt="">
+      </div>
+      
+      <div class="content">
+          <h3>Our Mission</h3>
+          <p>STEM Reach North Ghana is an organization dedicated to empowering girls in North Ghana through STEM education and mentorship. Our mission is to inspire, educate, and support young girls to pursue and excel in science, technology, engineering, and mathematics, equipping them with the skills and confidence to thrive in the digital world and become future leaders and innovators.</p>
+
+          <h3>Our Vision</h3>
+          <p>Our vision is to create a gender-inclusive society in North Ghana, where girls have equal access to opportunities in STEM fields. We envision a future where every girl in North Ghana is empowered to explore and excel in science, technology, engineering, and mathematics, breaking through barriers and contributing to the advancement of their communities and the nation.</p>
+      </div>
+
+    </div>
+  </section>  
+
+
+
+  <section class="courses" id="courses">
+    <h1 class="heading">Course Categories</h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="thumb">
+            <img src="images/science.png" alt="">
+            <span>10 courses</span>
+        </div>
+        <h3 class="title">Science</h3>
+        <a href="science.html" class="inline-btn">view courses</a>
+      </div>
+
+      <div class="box">
+        <div class="thumb">
+            <img src="images/tech.jpg" alt="">
+            <span>10 courses</span>
+        </div>
+        <h3 class="title">Technology</h3>
+        <a href="tech.html" class="inline-btn">view courses</a>
+      </div>
+
+      <div class="box">
+        <div class="thumb">
+            <img src="images/engineering.png" alt="">
+            <span>10 courses</span>
+        </div>
+        <h3 class="title">Engineering</h3>
+        <a href="engineering.html" class="inline-btn">view courses</a>
+      </div>
+
+
+      <div class="box">
+        <div class="thumb">
+            <img src="images/maths.jpeg" alt="">
+            <span>10 courses</span>
+        </div>
+        <h3 class="title">Mathematics</h3>
+        <a href="maths.html" class="inline-btn">view courses</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="mentorship" id="mentorship">
+    <h3>Why Join Our Mentorship? </h3>
+    <div class="row">
+      <div class="image">
+        <img src="images/mentorship.png" alt="">
+      </div>  
+      <div class="content">          
+        <h4>Expert Guidance:</h4>
+        <p>Our mentors possess extensive knowledge and experience in their respective STEM fields. They are committed to providing valuable insights, advice, and support to mentees.<br>
+        </p>
+        
+        <h4>Personalized Mentorship:</h4>
+        <p>We understand that every mentee has unique goals and aspirations. Our program matches mentees with mentors who align with their specific interests and needs, ensuring a tailored and enriching mentorship experience.<br>
+        </p> 
+          
+        <h4>Building Networks:</h4>
+        <p>Mentorship extends beyond knowledge transfer. Through our program, mentors and mentees have the opportunity to connect with like-minded individuals, fostering a strong network of STEM enthusiasts and professionals.<br>
+        </p> 
+
+        <h4>Impactful Collaboration:</h4>
+        <p>By participating in our mentorship program, you contribute to a larger goal of promoting STEM education and cultivating a culture of curiosity, critical thinking, and innovation.
+        </p>
+
+        <a href="mentors.html" class="inline-btn">explore mentors</a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+     <!--contact section--->
+  <section class="contact" id="contact">
+    <div class="main-contact">
+      <div class="contact-content">
+        <img src="images/logo.png" alt="logo">
+        <a href="#"><i class="fab fa-linkedin-in"> </i> LinkedIn</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+      </div>
+
+      <div class="contact-content">
+        <a href="#home" >Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="mentors.html">Mentorships</a>
+        <a href="./dforum.html">Discussion Forum</a>
+        <a href="./events.html">Events</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+
+      <div class="contact-content">
+        <a href="profile.html">Profile</a>
+        <a href="http://localhost/login">Login</a>
+        <a href="http://localhost/login">Sign Up</a>
+        <a href="events.html">Women in STEM</a>
+        <a href="mentors.html">Apply As Mentor</a>
+        <a href="mentors.html">Find Mentor</a>
+        <a href="events.html">Blog</a>
+      </div>
+
+      <div class="contact-content">
+        <div class="cont-details">Location:<a href="#">Jirapa, <br>Upper West Region, <br>Ghana</a></div>
+        <div class="cont-details">Email:<a href="#">northreach24@gmail.com</a></div>
+        <div class="cont-details">Phone:<a href="#">+233500000000</a></div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="last-text">
+    <p>Copyright &copy; northreach24. All Rights Reserved.</p>
+  </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
