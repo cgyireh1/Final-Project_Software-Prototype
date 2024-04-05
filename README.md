@@ -1,4 +1,4 @@
-# North STEMReach Platform
+# North STEMReach Ghana
 
 Welcome to the North STEMReach repository! 
 This platform aims to empower girls in STEM (Science, Technology, Engineering, and Mathematics) in Northern Ghana by providing resources, information, mentorship opportunities, discussion forums, and online courses. This README file will help you understand the project and guide you through the setup process.
