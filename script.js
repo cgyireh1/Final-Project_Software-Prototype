@@ -34,12 +34,6 @@ document.querySelector('#user-btn').onclick = () =>{
    search.classList.remove('active');
 }
 
-let search = document.querySelector('.header .flex');
-
-// document.querySelector('#search-btn').onclick = () =>{
-//    search.classList.toggle('active');
-//    profile.classList.remove('active');
-// }
 
 let sideBar = document.querySelector('.side-bar');
 
@@ -80,10 +74,3 @@ window.onscroll = () =>{
   }
 
 
-  // JavaScript for toggling the sidebar
-   // function toggleSidebar() {
-   //    var sidebar = document.querySelector('.side-bar');
-   //    var bodyContent = document.querySelector('.body');
-   //    sidebar.classList.toggle('active');
-   //    bodyContent.classList.toggle('active');
-   // }
