@@ -85,7 +85,7 @@
             </div>
             <div class="links">
               <p>Already Have Account ?</p>
-              <button id="signInButton">Sign In</button>
+              <button id="signInButton">Log In</button>
             </div>
           </div>
 
@@ -119,13 +119,6 @@
                 <button id="signUpButton">Sign Up</button>
               </div>
           </div>
-
-
-
-
-
-
-
 
 
 
