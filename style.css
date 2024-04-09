@@ -848,7 +848,7 @@ section.active {
 
 
   .navbar {
-    display: none;
+    display: block;
   }
 
 
